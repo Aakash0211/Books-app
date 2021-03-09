@@ -1,14 +1,18 @@
 {
   "expo": {
-    "name": "Books-app",
+    "name": "Book-app",
     "slug": "Books-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "privacy": "public",
+    "platforms":[
+     "ios",
+     "android"
+    ],
+    "version": "1.0.3",
+    "icon": "./assets/icon1.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,16 +21,23 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier":"com.Aakash0211.books-app",
+      "buildNumber":"1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "package":"com.Aakash0211_books_app",
+      "versionCode":2,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/splash.png",
         "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      },
+      "permissions":[
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "googleServicesFile": "./google-services.json"
     }
   }
 }

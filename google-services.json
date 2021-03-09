@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1086680086106",
+    "firebase_url": "https://books-app-2324f-default-rtdb.firebaseio.com",
+    "project_id": "books-app-2324f",
+    "storage_bucket": "books-app-2324f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086680086106:android:e276a50b892cba6d4fca63",
+        "android_client_info": {
+          "package_name": "com.Aakash0211_books_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086680086106-1p9ri749koufnfi6qs02ocooq6f37jqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsP7zIB4WPej1ZucRe-zW7eTOKFLGCCyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086680086106-1p9ri749koufnfi6qs02ocooq6f37jqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
