@@ -6,7 +6,7 @@ import {useDispatch,useSelector} from 'react-redux'
 import * as bookActions from '../store/actions/shopActions.js'
 import {HeaderButtons,Item} from 'react-navigation-header-buttons'
 import HeaderButton from '../components/HeaderButton.js'
-
+import {GoogleApi} from '../api'
 const bookDetail=(props)=>{
     const[load,setLoad]=useState(true)
     const [book,setBook]=useState({})
@@ -15,7 +15,7 @@ const bookDetail=(props)=>{
     const loadBook=async()=>{
         try{
      setBook({})
-      const res=await axios.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyDgdPE2t0KqxNBTYnbt5dSzICTZHneiDng`)
+      const res=await axios.get(`https://www.googleapis.com/books/v1/volumes/${id}?key=${GoogleApi}`)
       const book =res.data
       setBook(book)
       setLoad(false)

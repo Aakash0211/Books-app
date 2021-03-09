@@ -4,6 +4,7 @@
 import { applyMiddleware } from 'redux'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import Favourite from '../../models/Favorite.js'
+import {GoogleApi} from '../../api'
  export const GET_BOOKS='GET_BOOKS'
  export const DELETE_BOOKS='DELETE_BOOKS'
  export const DELETE_BOOK='DELETE_BOOK'
@@ -14,10 +15,11 @@ import Favourite from '../../models/Favorite.js'
  export const REMOVE_FAVOURITE='REMOVE_FAVOURITE'
  export const LOAD_CART='LOAD_CART'
  export const LOAD_FAVOURITE='LOAD_FAVOURITE'
+ 
  export const loadBooks=(genre)=>{
      return async dispatch=>{
       try{
-         const res= await axios.get(`https://www.googleapis.com/books/v1/volumes?q={subject:${genre}}&maxResults=40&printType=books&key=AIzaSyDgdPE2t0KqxNBTYnbt5dSzICTZHneiDng`)
+         const res= await axios.get(`https://www.googleapis.com/books/v1/volumes?q={subject:${genre}}&maxResults=40&printType=books&key=${GoogleApi}`)
          const books=await res.data.items
          dispatch({
             type:GET_BOOKS,
@@ -46,7 +48,7 @@ export const deleteBooks=()=>{
    
    return async dispatch=>{
     try{
-       const res= await axios.get(`https://www.googleapis.com/books/v1/volumes?q={${query}}&maxResults=40&printType=books&key=AIzaSyDgdPE2t0KqxNBTYnbt5dSzICTZHneiDng`)
+       const res= await axios.get(`https://www.googleapis.com/books/v1/volumes?q={${query}}&maxResults=40&printType=books&key=${GoogleApi}`)
        const books=await res.data.items
        dispatch({
           type:GET_BOOKS,
