@@ -4,7 +4,7 @@
 import { applyMiddleware } from 'redux'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import Favourite from '../../models/Favorite.js'
-import {GoogleApi} from '../../api'
+import {GoogleApi} from '../../apis/api'
  export const GET_BOOKS='GET_BOOKS'
  export const DELETE_BOOKS='DELETE_BOOKS'
  export const DELETE_BOOK='DELETE_BOOK'

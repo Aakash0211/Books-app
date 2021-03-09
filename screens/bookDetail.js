@@ -6,7 +6,7 @@ import {useDispatch,useSelector} from 'react-redux'
 import * as bookActions from '../store/actions/shopActions.js'
 import {HeaderButtons,Item} from 'react-navigation-header-buttons'
 import HeaderButton from '../components/HeaderButton.js'
-import {GoogleApi} from '../api'
+import {GoogleApi} from '../apis/api'
 const bookDetail=(props)=>{
     const[load,setLoad]=useState(true)
     const [book,setBook]=useState({})
