@@ -22,12 +22,12 @@
     ],
     "ios": {
       "bundleIdentifier":"com.Aakash0211.books-app",
-      "buildNumber":"1.0.0",
+      "buildNumber":"1.1.0",
       "supportsTablet": true
     },
     "android": {
       "package":"com.Aakash0211_books_app",
-      "versionCode":2,
+      "versionCode":3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/splash.png",
         "backgroundColor": "#FFFFFF"

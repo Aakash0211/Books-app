@@ -8,7 +8,6 @@ const GenreResult = props => {
     const dispatch=useDispatch()
     const [load,setLoad]=useState(true)
     
-    
     useEffect(()=>{
      dispatch(bookActions.deleteBooks())
      dispatch(bookActions.loadBooks(genre))
@@ -22,7 +21,7 @@ const GenreResult = props => {
         data={books}
       renderItem={(itemData)=>(
         <Book2
-         image={itemData.item.volumeInfo.imageLinks.thumbnail}
+        image={itemData.item.volumeInfo.imageLinks && itemData.item.volumeInfo.imageLinks.thumbnail}
          title={itemData.item.volumeInfo.title} id={itemData.item.id}
          navigation={props.navigation}
         />
